@@ -30,5 +30,5 @@ while rollsNeeded > 0:
     else:
       total = total * 6 + (roll - 1)
       rollsNeeded -= 1
-mask = 2**128 - 1
+mask = 2**args.entropy - 1
 print(hex(total & mask))
